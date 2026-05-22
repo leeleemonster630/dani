@@ -69,7 +69,7 @@ function draw() {
 
   fill(160, 120, 220, 160);
   textSize(11);
-  text("The Abyssal Aria", 250, 82);
+  text("Enter The Abyss", 250, 82);
 
   // click instruction fades out as power builds
   let alpha = map(sandy, 0, 300, 180, 0);
