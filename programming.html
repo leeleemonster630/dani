@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Danishi — The Abyssal Aria</title>
+    <link rel="stylesheet" href="styling/style.css" />
+    <style>
+      .sketch-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        opacity: 0;
+        animation: fadeUp 1s ease 1.1s forwards;
+        margin-top: 12px;
+      }
+
+      .sketch-wrapper canvas {
+        border: 1px solid #3de8f530;
+        border-radius: 2px;
+        box-shadow:
+          0 0 30px #3de8f520,
+          0 0 60px #1a7a8a18;
+        display: block;
+      }
+
+      .sketch-caption {
+        font-size: 0.85rem;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--muted);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rule"></div>
+
+    <h1>The Abyssal Aria</h1>
+
+    <div class="subtitle">click to charge Danishi's power</div>
+
+    <div class="divider">
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav-buttons">
+      <a href="index.html" class="btn">Home</a>
+      <a href="landscape.html" class="btn">Zygaria The Forgotten Divine</a>
+      <a href="audio.html" class="btn">Audio</a>
+      <a href="animation.html" class="btn">Animation</a>
+      <a href="final.html" class="btn">Final Project</a>
+      <a href="programming.html" class="btn">Danishi</a>
+    </nav>
+
+    <div class="sketch-wrapper">
+      <div id="sketch-container"></div>
+      <div class="sketch-caption">move your cursor &mdash; click to awaken</div>
+    </div>
+
+    <div class="rule-bottom"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>
